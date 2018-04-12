@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_card">
+
+        <TextView
+            android:id="@+id/adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/prenom"
+            android:layout_centerVertical="true"
+            android:text="Large Text"
+            android:textColor="#2C3646" />
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/prenom"
+            android:layout_alignBottom="@+id/prenom"
+            android:layout_toEndOf="@+id/prenom"
+            android:paddingLeft="10dp"
+            android:text="Medium Text"
+            android:textColor="#2C3646"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnaccepter"
+            android:layout_width="@dimen/place_autocomplete_powered_by_google_height"
+            android:layout_height="@dimen/place_autocomplete_powered_by_google_height"
+            android:layout_alignEnd="@+id/nom"
+            android:layout_below="@+id/adress"
+            android:background="@drawable/checked" />
+
+        <TextView
+            android:id="@+id/prenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/userimage"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/userimage"
+            android:text="Medium Text"
+            android:textColor="#2C3646"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnrefuser"
+            android:layout_width="@dimen/place_autocomplete_powered_by_google_height"
+            android:layout_height="@dimen/place_autocomplete_powered_by_google_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/cancel" />
+
+        <ImageView
+            android:id="@+id/userimage"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/accueil" />
+
+    </RelativeLayout>
+
+</FrameLayout>

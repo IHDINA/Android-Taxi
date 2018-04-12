@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.taxiagadirconducteur.first_fragement"
+    android:background="#2C3646"
+    >
+
+    <RelativeLayout
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_card_2">
+
+        <TextView
+            android:id="@+id/Rev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Rev_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="27dp"
+            android:text="4000"
+            android:textColor=" #ff4d4d"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/Rev_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Mes Revenues"
+            android:textColor="#2C3646"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Rev"
+            android:layout_alignBottom="@+id/Rev"
+            android:layout_marginStart="14dp"
+            android:textSize="25sp"
+            android:layout_toEndOf="@+id/Rev"
+            android:text="DH" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+
+        android:layout_alignEnd="@+id/r"
+        android:layout_alignStart="@+id/r"
+        android:layout_alignTop="@+id/r"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="260dp"
+
+        android:background="@drawable/bg_card_2">
+
+        <TextView
+            android:id="@+id/dmcomp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Demandecomp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="27dp"
+            android:text="25"
+            android:textColor=" #ff4d4d"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/Demandecomp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Demandes Completés"
+            android:textColor="#2C3646"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+</RelativeLayout>
